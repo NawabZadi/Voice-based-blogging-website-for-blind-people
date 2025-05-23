@@ -1,0 +1,87 @@
+.Card {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.16);
+    box-sizing: border-box;
+    height: 17.5rem;
+    width: 12.95rem;
+    border-radius: 3px 3px 10% 10%;
+    overflow: hidden;
+    transition: transform .2s linear;
+}
+.Card:hover {
+    transform: scale(1.02);
+}
+.Card__Img {
+    height: 40%;
+    background-size: cover;
+    background-image: url("https://cdn4.wpbeginner.com/wp-content/uploads/2018/07/whatisblog.png");
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.16);
+}
+
+.Card__Content {
+    height: 50%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.Card__Content--Heading {
+    height: 35%;
+    display: flex;
+
+}
+
+.Card__Content--Heading p{
+    text-align: left;
+    font-size: 0.8rem;
+    align-self: center;
+    font-weight: bold;
+    margin: 0 .4375rem;
+}
+
+.Card__Content--Info {
+    height: 10%;
+    display: flex;
+    margin-bottom: .4375rem;
+    margin-top: -0.4375rem;
+    margin-left: .4375rem;
+}
+.Card__Content--Info p {
+    font-size: 0.6rem;
+}
+.Card__Content--Overview {
+    height: 45%;
+    max-height: 45%;
+    overflow: hidden;
+}
+
+.Card__Content--Overview p{
+    margin-left: .4375rem;
+    margin-right: .4375rem;
+    text-align: left;
+    font-size: 0.6125rem;
+    align-self: center;
+    color: #777777;
+}
+
+
+.Card__Button {
+    border: none;
+    /*background: none;*/
+    outline: none;
+    height: 10%;
+    width: 100%;
+    align-self: center;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: rgba(6, 133, 244, 0.85);
+    will-change: transform;
+    transition: transform .1s linear;
+    transform-origin: bottom;
+}
+
+.Card__Button:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}

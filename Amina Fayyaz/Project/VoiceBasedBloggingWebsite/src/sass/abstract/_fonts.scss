@@ -1,0 +1,31 @@
+.py-fnt {
+  &-s {
+    &--1p2 {
+      font-size: 16px;
+    }
+
+    &--1p4 {
+      font-size: 1.4rem;
+      @media (max-width: 450px) {
+        font-size: 1rem;
+      }
+      @media (max-width: 1550px) {
+        font-size: 1.2rem;
+      }
+
+      &-I {
+        font-size: 1.4rem !important;
+      }
+    }
+
+    &--1p6 {
+      font-size: 1.6rem;
+    }
+  }
+
+  &-w {
+    &--bold {
+      font-weight: bold;
+    }
+  }
+}

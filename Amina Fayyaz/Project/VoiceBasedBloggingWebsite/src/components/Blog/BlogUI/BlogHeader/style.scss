@@ -1,0 +1,54 @@
+@import "../../../../sass/abstract/main";
+
+$narrative-pad-tb: 0;
+$narrative-pad-lr: 2.4rem;
+
+$col-comment: $col-primary-blue;
+$col-like: $col-primary-red;
+$col-share: $col-primary-green;
+
+
+
+.blog {
+
+  &-header {
+    width: 100%;
+    height: 45vh;
+    max-height: 45vh;
+    position: relative;
+    margin-bottom: 5rem;
+
+    &--pixel {
+      background-color: $col-primary-blue-30;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .blog-title {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: 5;
+      width: 30%;
+      @media (max-width: 1050px) {
+        width: 40%;
+      }
+      @media (max-width: 450px) {
+        width: 75%;
+      }
+      padding: 1rem 0;
+      background-color: #fff;
+
+      &--heading {
+        margin-bottom: 1.5rem;
+        text-transform: capitalize;
+      }
+
+      .blog-authored {
+        padding: $narrative-pad-tb $narrative-pad-lr;
+      }
+    }
+  }
+}
+

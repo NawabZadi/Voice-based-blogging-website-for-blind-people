@@ -1,0 +1,46 @@
+@import "../../../../sass/abstract/main";
+
+$narrative-pad-tb: 0;
+$narrative-pad-lr: 2.4rem;
+
+.py-formatted-blog-heading {
+  position: relative;
+  padding: $narrative-pad-tb $narrative-pad-lr;
+  font-size: 24px;
+  word-break: break-word;
+  @media (max-width: 450px) {
+    font-size: 1.8rem;
+  }
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    height: 0.1rem;
+    width: 75%;
+    z-index: -1;
+    background: $col-silver-lining-100;
+    overflow: visible;
+  }
+
+  &::before {
+    width: 60%;
+    top: 15px;
+    left: 0;
+  }
+
+  &::after {
+    width: 90%;
+    bottom: 16px;
+    right: 0;
+  }
+
+  &--margin {
+    margin-right: 43.5%;
+  }
+
+  &--print {
+    background: #ffffff;
+    padding: 0 1rem;
+  }
+}

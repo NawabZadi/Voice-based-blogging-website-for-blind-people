@@ -1,0 +1,43 @@
+@import "../../../sass/abstract/main";
+
+$vacuum-error: 0.075rem;
+
+$li-spacing: 1.5rem;
+$li-margin: $li-spacing / 2;
+
+$dot-width: 0.2rem;
+$dot-height: $dot-width;
+$dot-radius: $dot-width / 2;
+
+$dot-plot-ordinate-pos: -20%;
+$dot-plot-abscissa-pos: ($li-margin + ($vacuum-error)) * -1;
+
+$dot-fallback-color: #000;
+
+.py-dot-list {
+
+  &--item {
+    display: inline;
+    color: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    margin-right: 0.75rem;
+
+    &:not(:first-child) {
+      position: relative;
+      margin-left: $li-margin;
+
+      &::before {
+        position: absolute;
+        content: '.';
+        //width: $dot-width;
+        //height: $dot-height;
+        //border-radius: 100rem;
+        transform: translate(-50%, 0);
+        top: $dot-plot-ordinate-pos;
+        left: $dot-plot-abscissa-pos;
+        //background-color: $dot-fallback-color;
+      }
+    }
+  }
+}

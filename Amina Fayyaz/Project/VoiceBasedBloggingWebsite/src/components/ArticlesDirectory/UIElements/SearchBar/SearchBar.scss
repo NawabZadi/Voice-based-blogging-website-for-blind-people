@@ -1,0 +1,35 @@
+.ArticleDirectorySearchBar {
+  margin: 50px auto;
+  width: 590px;
+  height: 61px;
+  border-radius: 15px;
+  border: 1px solid #707070;
+  position: relative;
+
+  &__Label {
+    width: 99px;
+    height: 30px;
+    background-color: #ffffff;
+    position: absolute;
+    left: 6.27%;
+    top: -28%;
+    display: flex;
+    justify-content: center;
+
+    &--Text {
+      font-size: 23px;
+      color: #FFD459;
+    }
+  }
+  &__Input {
+    height: 24px;
+    width: 484px;
+    border: none;
+    position: absolute;
+    bottom: 10%;
+    font-size: 20px;
+    color: #5A5D65;
+    margin: 10px 53px 0px 53px;
+    outline: none;
+  }
+}

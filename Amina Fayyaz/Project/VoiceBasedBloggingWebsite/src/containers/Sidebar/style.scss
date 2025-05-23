@@ -1,0 +1,44 @@
+.sidebar {
+  padding: 5%;
+  //color: #458BFF; //changes color of writing in sidebaaar
+}
+
+.commands {
+  margin-top: 10px;
+  //color: #458BFF;  //changes color oif commands
+}
+.command {
+  margin-bottom: 10px;
+  //color: #458BFF; //changes color of commands and description
+}
+.h6 {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 1.6;
+  letter-spacing: 0.0075em;
+  border: 1px solid #d3d3d3;
+  padding: 3px 9px;
+  border-radius: 4px;
+  box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);
+}
+.caption {
+
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 1.66;
+  letter-spacing: 0.03333em;
+  padding-left: 10px;
+
+}
+
+.button {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.75;
+  letter-spacing: 0.02857em;
+  text-transform: uppercase;
+  color: #458BFF; //changes color of heading
+}
